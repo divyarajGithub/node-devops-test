@@ -1,10 +1,13 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
-const taskSchema = new mongoose.Schema({
-    title : {
-        type : String,
-        required : true
-    }
-} , {timestamps : true})
+const taskSchema = new mongoose.Schema(
+  {
+    title: {
+      type: String,
+      required: true,
+    },
+  },
+  { timestamps: true },
+);
 
-export default mongoose.model('Task' , taskSchema)
+export default mongoose.model('Task', taskSchema);
