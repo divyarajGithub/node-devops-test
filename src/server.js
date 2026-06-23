@@ -11,7 +11,7 @@ connectDB();
 server.use(express.json());
 
 server.get('/', (req, res) => {
-  res.json('server is runing');
+  res.json('server is runing cicd addedd finally');
 });
 server.get('/health', (req, res) => {
   res.status(200).json({
